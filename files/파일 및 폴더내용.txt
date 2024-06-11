@@ -1,0 +1,28 @@
+.env
+ - 개발 환경 분리 및 각 종 환경변수 설정 파일
+
+routes 폴더
+ - api 관리
+ - route 파일은 콘텐츠에 따라 분한 관리함
+ - 이는 app / Providers / RouteServiceProvider 에서 segment에 따라 분할 함
+
+app 폴더
+ - Services
+    - API 1:1로 매칭된 비즈니스 코드 관리 클래스이며, 모든 로직은 여기서 진행 됨
+ - Monitor
+    - 오류 알림 채널 연동용 클래스
+ - Repositories
+    - Model 처리용
+ - Define
+    - 각 종 Define 내역 관리, class 별로 생성하며 const 형태로 관리 함
+
+ Http
+    - Middleware 셋팅
+    - Middleware 관리
+    - controller 관리
+
+Packet
+  - Request / Response 클래스 관리
+
+Providers
+  - Route 관리
